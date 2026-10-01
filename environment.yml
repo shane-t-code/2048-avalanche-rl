@@ -1,0 +1,19 @@
+name: rl_fun_times
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.13
+  - numpy
+  - numba
+  - matplotlib
+  - pytorch
+  - pytest
+  - pip
+  - pip:
+      # pip wheel bundles its own SDL; conda-forge's sdl2-compat build fails to load SDL3.dll on Windows
+      - pygame
+      - gymnasium
+      - tqdm
+      - prettytable

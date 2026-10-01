@@ -1,0 +1,59 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "2048: Human - Manual",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/human_play_manual.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": { "MPLBACKEND": "TkAgg" }
+    },
+    {
+      "name": "2048: Human - Algo",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/human_play_algo.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": { "MPLBACKEND": "TkAgg" }
+    },
+    {
+      "name": "2048: Human - RL",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/human_play_rl.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": { "MPLBACKEND": "TkAgg" }
+    },
+    {
+      "name": "2048: Algo Play (batch)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/algo_play.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": { "MPLBACKEND": "TkAgg" }
+    },
+    {
+      "name": "2048: RL Play (batch)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/rl_play.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": { "MPLBACKEND": "TkAgg" }
+    },
+    {
+      "name": "2048: RL Training",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/rl_training.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}",
+      "env": { "MPLBACKEND": "TkAgg" }
+    }
+  ]
+}
