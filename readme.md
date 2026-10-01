@@ -70,7 +70,9 @@ The provided DQN baseline averages negative scores because it repeatedly picks i
 
 The score of any game turns out to depend only on its final board, not on how it was played:
 
-$$\text{score} = \sum_{\text{tiles } t} (\log_2 t - 1)\, t \;-\; 4\cdot\#(\text{4-spawns}) \;-\; 10\cdot\#(\text{no-op moves})$$
+$$\text{score} = \sum_{t} (\log_2 t - 1) \cdot t - 4 \cdot N_{4} - 10 \cdot N_{\text{no-op}}$$
+
+where the sum runs over the tiles on the final board, $N_{4}$ is the number of 4-tiles spawned, and $N_{\text{no-op}}$ is the number of moves that changed nothing.
 
 The identity holds because merges conserve the sum of tiles on the board. It is verified exactly on real games. Uses:
 
